@@ -1,3 +1,4 @@
+/* Base styles */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -26,28 +27,34 @@ header p {
 
 nav {
   margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
 nav a {
-  margin: 0 10px;
   text-decoration: none;
   color: #61dafb;
   font-weight: bold;
   font-size: 0.95em;
+  padding: 8px 12px;
+  background: #2c2c3f;
+  border-radius: 6px;
+  transition: 0.3s;
 }
 
 nav a:hover {
+  background: #3d3d5c;
   text-decoration: underline;
 }
 
 .resume-button {
-  background: #61dafb;
-  color: #1e1e2f;
-  padding: 6px 12px;
-  border-radius: 5px;
-  margin-left: 10px;
+  background: #61dafb !important;
+  color: #1e1e2f !important;
 }
 
+/* Section styling */
 section {
   margin: 40px auto;
   max-width: 900px;
@@ -63,39 +70,4 @@ h2 {
 }
 
 h3 {
-  margin-top: 15px;
-  color: #d4d4d4;
-}
-
-ul {
-  padding-left: 20px;
-}
-
-.skills {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.skills li {
-  background: #444;
-  color: #fff;
-  padding: 10px 14px;
-  border-radius: 5px;
-  font-size: 0.9em;
-}
-
-a {
-  color: #61dafb;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #12121c;
-  color: #aaa;
-  font-size: 0.9em;
-  margin-top: 40px;
-}
+  margin-top: 15px
