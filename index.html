@@ -98,10 +98,10 @@
       const update = () => {
         const target = +counter.getAttribute('data-target');
         const current = +counter.innerText;
-        const increment = target / 100;
+        const increment = target / 1;
         if (current < target) {
           counter.innerText = (current + increment).toFixed(1);
-          setTimeout(update, 1);
+          setTimeout(update, 20);
         } else {
           counter.innerText = target;
         }
