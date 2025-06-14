@@ -6,6 +6,7 @@
   <title>Shunmugar Rajan G | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
 
@@ -39,6 +40,18 @@
       </div>
     </div>
   </section>
+<script>
+  ScrollReveal({
+    distance: '60px',
+    duration: 1000,
+    delay: 200,
+    reset: true
+  });
 
+  ScrollReveal().reveal('.left', { origin: 'left' });
+  ScrollReveal().reveal('.right', { origin: 'right' });
+  ScrollReveal().reveal('.navbar', { origin: 'top' });
+  ScrollReveal().reveal('#about, #skills, #projects, #contact', { origin: 'bottom', interval: 200 });
+</script>
 </body>
 </html>
