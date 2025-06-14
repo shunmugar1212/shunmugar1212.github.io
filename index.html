@@ -4,243 +4,76 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Shunmugar Rajan G | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    :root {
-      --primary: #2563eb;
-      --bg: #f9f9f9;
-      --text: #1e293b;
-      --muted: #64748b;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
-    }
-
-    html { scroll-behavior: smooth; }
-    body { background-color: var(--bg); color: var(--text); }
-
-    /* Navbar */
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: white;
-      padding: 20px 30px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary); }
-
-    nav {
-      display: flex;
-      align-items: center;
-    }
-
-    .nav-links {
-      display: flex;
-      list-style: none;
-      gap: 20px;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: var(--muted);
-      font-weight: 500;
-      transition: 0.3s;
-    }
-
-    .nav-links a:hover {
-      color: var(--primary);
-    }
-
-    /* Hamburger */
-    .hamburger {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      cursor: pointer;
-    }
-
-    .hamburger div {
-      width: 25px;
-      height: 3px;
-      background: var(--text);
-    }
-
-    @media (max-width: 768px) {
-      .nav-links {
-        position: absolute;
-        top: 70px;
-        left: 0;
-        background: white;
-        flex-direction: column;
-        width: 100%;
-        display: none;
-        padding: 20px;
-      }
-
-      .nav-links.open {
-        display: flex;
-      }
-
-      .hamburger {
-        display: flex;
-      }
-    }
-
-    /* Hero */
-    .hero {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      padding: 80px 20px;
-      max-width: 1200px;
-      margin: auto;
-      gap: 40px;
-    }
-
-    .left {
-      flex: 1;
-      min-width: 300px;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      color: var(--text);
-    }
-
-    h2 {
-      font-size: 1.5rem;
-      color: var(--primary);
-      margin: 10px 0;
-    }
-
-    .desc {
-      font-size: 1rem;
-      color: var(--muted);
-      margin: 15px 0;
-      max-width: 500px;
-    }
-
-    .social-icons a {
-      color: var(--primary);
-      font-size: 1.2rem;
-      margin-right: 15px;
-    }
-
-    .btn-cv {
-      display: inline-block;
-      background: var(--primary);
-      color: white;
-      padding: 10px 18px;
-      border-radius: 6px;
-      font-weight: bold;
-      margin-top: 20px;
-      text-decoration: none;
-    }
-
-    .right {
-      flex: 1;
-      text-align: center;
-    }
-
-    .right img {
-      width: 300px;
-      border-radius: 50%;
-      border: 4px solid #ddd;
-    }
-
-    /* Fixed Button */
-    .btn-fixed {
-      display: none;
-    }
-
-    @media (max-width: 768px) {
-      .btn-fixed {
-        display: block;
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background: var(--primary);
-        color: white;
-        padding: 10px 14px;
-        border-radius: 50px;
-        font-weight: bold;
-        z-index: 999;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-        text-decoration: none;
-      }
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 60px;
-      padding: 20px;
-      font-size: 0.9rem;
-      color: var(--muted);
-    }
-  </style>
 </head>
 <body>
-
   <header>
-    <div class="logo">Portfolio.</div>
+    <h1>Shunmugar Rajan G</h1>
+    <p>Senior Digital Media Analyst | Data-Driven Marketer | MBA</p>
     <nav>
-      <div class="hamburger" onclick="toggleMenu()">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a href="assets/resume.pdf" target="_blank" class="resume-button"><i class="fa-solid fa-download"></i> Resume</a>
     </nav>
   </header>
 
-  <section class="hero" id="home">
-    <div class="left">
-      <p>Hi, Myself</p>
-      <h1>Shunmugar Rajan G</h1>
-      <h2>Digital Media Analyst</h2>
-      <p class="desc">I specialize in digital marketing analytics, campaign optimization, and dashboard creation using GA4, Looker Studio, and SQL. Currently exploring advanced data analysis using Python and Tableau.</p>
-      <div class="social-icons">
-        <a href="mailto:shunmugar1212@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-        <a href="https://linkedin.com/in/shunmugar1212" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/shunmugar1212" target="_blank"><i class="fab fa-github"></i></a>
-      </div>
-      <a href="assets/resume.pdf" class="btn-cv" target="_blank">Download CV</a>
-    </div>
-    <div class="right">
-      <img src="assets/profile.png" alt="Shunmugar Rajan G">
-    </div>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a Digital Marketing Analyst with 3.5+ years of experience managing paid campaigns, analyzing behavior metrics, and building powerful dashboards. I bring an MBA in Marketing & Analytics, along with ongoing upskilling in SQL, Python, and Tableau to deliver stronger insights and business impact.
+    </p>
   </section>
 
-  <!-- Fixed Resume Button on Mobile -->
-  <a href="assets/resume.pdf" target="_blank" class="btn-fixed">📄 CV</a>
+  <section id="experience">
+    <h2>Experience</h2>
+    <h3>Senior Digital Media Analyst – Ducima Analytics, Chennai (2021–Present)</h3>
+    <ul>
+      <li>Improved ROAS by 20% across Google, Facebook, and LinkedIn Ads.</li>
+      <li>Created Looker Studio dashboards to visualize campaign KPIs in real time.</li>
+      <li>Implemented GA4 and GTM to boost data accuracy and tagging.</li>
+      <li>Conducted A/B tests to improve landing page conversion by 15%.</li>
+      <li>Collaborated across departments to align campaigns with business strategy.</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Marketing Dashboard Automation:</strong> Connected GA4 + Sheets + Looker Studio to reduce reporting time by 70%.</li>
+      <li><strong>Customer Funnel Drop-Off Analysis:</strong> Used GA4 to identify bottlenecks, leading to a 15% improvement in conversion.</li>
+      <li><strong>Ongoing Projects:</strong> SQL queries on BigQuery, data cleaning with Python Pandas, and a Tableau dashboard on eCommerce data.</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills & Tools</h2>
+    <ul class="skills">
+      <li><i class="fa-brands fa-google"></i> GA4 & GTM</li>
+      <li><i class="fa-solid fa-chart-line"></i> Looker Studio</li>
+      <li><i class="fa-solid fa-code"></i> SQL (Intermediate)</li>
+      <li><i class="fa-brands fa-python"></i> Python (Pandas – Learning)</li>
+      <li><i class="fa-solid fa-database"></i> Tableau & Power BI</li>
+      <li><i class="fa-solid fa-table"></i> Excel (Advanced)</li>
+      <li><i class="fa-solid fa-bullhorn"></i> Google Ads / Meta Ads</li>
+      <li><i class="fa-solid fa-flask"></i> A/B Testing</li>
+      <li><i class="fa-solid fa-link"></i> UTM Tagging</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><i class="fa-solid fa-envelope"></i> <a href="mailto:shunmugar1212@gmail.com">shunmugar1212@gmail.com</a></p>
+    <p><i class="fa-solid fa-phone"></i> +91 99946 91111</p>
+    <p><i class="fa-brands fa-linkedin"></i> <a href="https://linkedin.com/in/shunmugar1212" target="_blank">linkedin.com/in/shunmugar1212</a></p>
+    <p><i class="fa-solid fa-location-dot"></i> Coimbatore, Tamil Nadu</p>
+  </section>
 
   <footer>
     <p>© 2025 Shunmugar Rajan G — <a href="https://shunmugar1212.github.io">shunmugar1212.github.io</a></p>
   </footer>
-
-  <script>
-    function toggleMenu() {
-      document.getElementById('navLinks').classList.toggle('open');
-    }
-
-    // Optional ScrollReveal
-    // ScrollReveal({ distance: '40px', duration: 800, delay: 100, reset: false }).reveal('.left, .right');
-  </script>
-
 </body>
 </html>
