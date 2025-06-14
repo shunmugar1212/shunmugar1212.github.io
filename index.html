@@ -1,83 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Shunmugar Rajan G | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
   <header>
     <h1>Shunmugar Rajan G</h1>
     <p>Senior Digital Media Analyst | Data-Driven Marketer | MBA</p>
-    <a href="assets/resume.pdf" target="_blank" class="resume-button"><i class="fa-solid fa-download"></i> Resume</a>
+    <a href="assets/resume.pdf" class="resume-button" target="_blank"><i class="fa-solid fa-download"></i> Resume</a>
   </header>
 
+  <!-- Counters -->
+  <section class="counters">
+    <div class="counter-box">
+      <h2><span class="counter" data-target="3.5">0</span>+</h2>
+      <p>Years Experience</p>
+    </div>
+    <div class="counter-box">
+      <h2><span class="counter" data-target="100">0</span>+</h2>
+      <p>Campaigns Managed</p>
+    </div>
+    <div class="counter-box">
+      <h2><span class="counter" data-target="50">0</span>+</h2>
+      <p>Dashboards Built</p>
+    </div>
+  </section>
+
+  <!-- About -->
   <section id="about">
     <h2>About Me</h2>
-    <p>
-      I’m a Digital Marketing Analyst with 3.5+ years of experience managing paid campaigns, analyzing behavior metrics, and building powerful dashboards. I bring an MBA in Marketing & Analytics, along with ongoing upskilling in SQL, Python, and Tableau to deliver stronger insights and business impact.
-    </p>
+    <p>I’m a Digital Marketing Analyst with 3.5+ years of experience managing paid campaigns, analyzing behavior metrics, and building dashboards. I'm skilled in GA4, SQL, Python, and Tableau to turn insights into action.</p>
   </section>
 
-  <section id="experience">
-    <h2>Experience</h2>
-    <h3>Senior Digital Media Analyst – Ducima Analytics, Chennai (2021–Present)</h3>
-    <ul>
-      <li>Improved ROAS by 20% across Google, Facebook, and LinkedIn Ads.</li>
-      <li>Created Looker Studio dashboards to visualize campaign KPIs in real time.</li>
-      <li>Implemented GA4 and GTM to boost data accuracy and tagging.</li>
-      <li>Conducted A/B tests to improve landing page conversion by 15%.</li>
-      <li>Collaborated across departments to align campaigns with business strategy.</li>
-    </ul>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Marketing Dashboard Automation:</strong> Connected GA4 + Sheets + Looker Studio to reduce reporting time by 70%.</li>
-      <li><strong>Customer Funnel Drop-Off Analysis:</strong> Used GA4 to identify bottlenecks, leading to a 15% improvement in conversion.</li>
-      <li><strong>Ongoing Projects:</strong> SQL queries on BigQuery, data cleaning with Python Pandas, and a Tableau dashboard on eCommerce data.</li>
-    </ul>
-  </section>
-
+  <!-- Skills -->
   <section id="skills">
     <h2>Skills & Tools</h2>
-    <ul class="skills">
-      <li><i class="fa-brands fa-google"></i> GA4 & GTM</li>
-      <li><i class="fa-solid fa-chart-line"></i> Looker Studio</li>
-      <li><i class="fa-solid fa-code"></i> SQL (Intermediate)</li>
-      <li><i class="fa-brands fa-python"></i> Python (Pandas – Learning)</li>
-      <li><i class="fa-solid fa-database"></i> Tableau & Power BI</li>
-      <li><i class="fa-solid fa-table"></i> Excel (Advanced)</li>
-      <li><i class="fa-solid fa-bullhorn"></i> Google Ads / Meta Ads</li>
-      <li><i class="fa-solid fa-flask"></i> A/B Testing</li>
-      <li><i class="fa-solid fa-link"></i> UTM Tagging</li>
-    </ul>
+    <div class="skills-grid">
+      <div class="skill-card"><i class="fa-brands fa-google"></i> GA4 & GTM</div>
+      <div class="skill-card"><i class="fa-solid fa-chart-line"></i> Looker Studio</div>
+      <div class="skill-card"><i class="fa-solid fa-code"></i> SQL</div>
+      <div class="skill-card"><i class="fa-brands fa-python"></i> Python</div>
+      <div class="skill-card"><i class="fa-solid fa-database"></i> Tableau</div>
+      <div class="skill-card"><i class="fa-solid fa-table"></i> Excel</div>
+      <div class="skill-card"><i class="fa-solid fa-bullhorn"></i> Google & Meta Ads</div>
+      <div class="skill-card"><i class="fa-solid fa-flask"></i> A/B Testing</div>
+      <div class="skill-card"><i class="fa-solid fa-link"></i> UTM Tagging</div>
+    </div>
   </section>
 
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-cards">
+      <div class="project-card">
+        <h3>Marketing Dashboard Automation</h3>
+        <p>Connected GA4 to Google Sheets + Looker Studio. Saved 70% time in weekly reporting.</p>
+      </div>
+      <div class="project-card">
+        <h3>Customer Funnel Analysis</h3>
+        <p>Analyzed GA4 drop-offs and improved lead conversion by 15%.</p>
+      </div>
+      <div class="project-card">
+        <h3>Ongoing Learning Projects</h3>
+        <p>SQL (BigQuery), Python (Pandas), Tableau dashboard for eCommerce trends.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
   <section id="contact">
     <h2>Contact</h2>
-    <p><i class="fa-solid fa-envelope"></i> <a href="mailto:shunmugar1212@gmail.com">shunmugar1212@gmail.com</a></p>
-    <p><i class="fa-solid fa-phone"></i> +91 99946 91111</p>
-    <p><i class="fa-brands fa-linkedin"></i> <a href="https://linkedin.com/in/shunmugar1212" target="_blank">linkedin.com/in/shunmugar1212</a></p>
-    <p><i class="fa-solid fa-location-dot"></i> Coimbatore, Tamil Nadu</p>
+    <div class="contact-info">
+      <p><i class="fa-solid fa-envelope"></i> <a href="mailto:shunmugar1212@gmail.com">shunmugar1212@gmail.com</a></p>
+      <p><i class="fa-solid fa-phone"></i> +91 99946 91111</p>
+      <p><i class="fa-brands fa-linkedin"></i> <a href="https://linkedin.com/in/shunmugar1212" target="_blank">linkedin.com/in/shunmugar1212</a></p>
+      <p><i class="fa-solid fa-location-dot"></i> Coimbatore, Tamil Nadu</p>
+    </div>
   </section>
 
   <footer>
     <p>© 2025 Shunmugar Rajan G | <a href="https://shunmugar1212.github.io">shunmugar1212.github.io</a></p>
   </footer>
 
+  <!-- JS for counters -->
   <script>
-    ScrollReveal().reveal('section', {
-      duration: 900,
-      distance: '50px',
-      origin: 'bottom',
-      easing: 'ease-out',
-      interval: 150
+    const counters = document.querySelectorAll('.counter');
+    counters.forEach(counter => {
+      counter.innerText = '0';
+      const update = () => {
+        const target = +counter.getAttribute('data-target');
+        const current = +counter.innerText;
+        const increment = target / 100;
+        if (current < target) {
+          counter.innerText = (current + increment).toFixed(1);
+          setTimeout(update, 20);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      update();
     });
+    ScrollReveal().reveal('section', { duration: 1000, distance: '50px', origin: 'bottom', interval: 100 });
   </script>
 </body>
 </html>
