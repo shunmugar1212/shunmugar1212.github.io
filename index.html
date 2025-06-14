@@ -2,53 +2,170 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shunmugar Rajan G | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+    html { scroll-behavior: smooth; }
+    body { background: #0f172a; color: #f4f4f4; }
+
+    header {
+      background: #12121c;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo { font-size: 1.5rem; font-weight: bold; color: #fff; }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    nav a {
+      color: #94a3b8;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1 { font-size: 2.5rem; color: #fff; margin-bottom: 10px; }
+    h2 { color: #38bdf8; margin-bottom: 10px; font-size: 1.8rem; }
+    p { margin: 10px 0; color: #cbd5e1; line-height: 1.6; }
+
+    .social-icons a {
+      color: #38bdf8;
+      font-size: 1.2rem;
+      margin-right: 15px;
+    }
+
+    .btn-cv {
+      display: inline-block;
+      background: #38bdf8;
+      color: #0f172a;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      margin-top: 20px;
+      text-decoration: none;
+    }
+
+    .skills ul, .projects ul {
+      padding-left: 20px;
+    }
+
+    .skills li, .projects li {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      background: #12121c;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    @media screen and (max-width: 768px) {
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+    }
+  </style>
   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
+
 <body>
 
-  <nav class="navbar">
+  <header class="navbar">
     <div class="logo">Portfolio.</div>
-    <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <div class="left">
-        <p class="intro">Hi, Myself</p>
-        <h1>Shunmugar Rajan G</h1>
-        <h2>I'm a <span class="highlight">Digital Media Analyst</span></h2>
-        <p class="desc">Specialized in paid media performance, dashboard creation, and marketing analytics. Constantly exploring data through GA4, SQL, and Python.</p>
-        <div class="social-icons">
-          <a href="mailto:shunmugar1212@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-          <a href="https://linkedin.com/in/shunmugar1212" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/shunmugar1212" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
-       <a href="assets/resume.pdf" target="_blank" class="btn-cv">Download CV</a>
-      </div>
+  <section id="home">
+    <h1>Shunmugar Rajan G</h1>
+    <h2>Senior Digital Media Analyst</h2>
+    <p>3.5+ years optimizing paid campaigns, building dashboards with GA4 & Looker Studio, and diving into data using SQL & Python.</p>
+    <div class="social-icons">
+      <a href="mailto:shunmugar1212@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://linkedin.com/in/shunmugar1212" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/shunmugar1212" target="_blank"><i class="fab fa-github"></i></a>
     </div>
+    <a href="assets/resume.pdf" class="btn-cv" target="_blank">Download CV</a>
   </section>
-<script>
-  ScrollReveal({
-    distance: '60px',
-    duration: 1000,
-    delay: 200,
-    reset: true
-  });
 
-  ScrollReveal().reveal('.left', { origin: 'left' });
-  ScrollReveal().reveal('.right', { origin: 'right' });
-  ScrollReveal().reveal('.navbar', { origin: 'top' });
-  ScrollReveal().reveal('#about, #skills, #projects, #contact', { origin: 'bottom', interval: 200 });
-</script>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a data-driven marketing analyst with strong skills in campaign performance, GA4, Looker Studio, and conversion optimization. With an MBA in Marketing & Analytics, I bring technical depth and business understanding to digital strategy.
+    </p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Google Analytics 4 (GA4), GTM</li>
+      <li>Looker Studio, Excel (Advanced)</li>
+      <li>SQL (Intermediate), Python (Pandas – learning)</li>
+      <li>Tableau, Power BI</li>
+      <li>Google Ads, Meta Ads, LinkedIn Ads</li>
+      <li>UTM Tagging, A/B Testing</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Marketing Dashboard Automation:</strong> GA4 → Sheets → Looker Studio. Cut reporting time by 70%.</li>
+      <li><strong>Funnel Drop-off Analysis:</strong> Used GA4 & Excel to improve lead conversion by 15%.</li>
+      <li><strong>Ongoing Learning:</strong> SQL with BigQuery, Python data cleaning, Tableau eCommerce dashboard.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:shunmugar1212@gmail.com">shunmugar1212@gmail.com</a></p>
+    <p>Phone: +91 99946 91111</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/shunmugar1212" target="_blank">linkedin.com/in/shunmugar1212</a></p>
+    <p>Location: Coimbatore, Tamil Nadu</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Shunmugar Rajan G — <a href="https://shunmugar1212.github.io" style="color:#38bdf8;">shunmugar1212.github.io</a></p>
+  </footer>
+
+  <script>
+    ScrollReveal({ distance: '40px', duration: 800, delay: 100, reset: false });
+    ScrollReveal().reveal('.navbar', { origin: 'top' });
+    ScrollReveal().reveal('#home', { origin: 'left' });
+    ScrollReveal().reveal('#about', { origin: 'bottom' });
+    ScrollReveal().reveal('#skills', { origin: 'right' });
+    ScrollReveal().reveal('#projects', { origin: 'left' });
+    ScrollReveal().reveal('#contact', { origin: 'bottom' });
+  </script>
+
 </body>
 </html>
