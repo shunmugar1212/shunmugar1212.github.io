@@ -9,9 +9,14 @@
 </head>
 <body>
   <header>
-    <h1>Shunmugar Rajan G</h1>
+    <div class="header-top">
+      <h1>Shunmugar Rajan G</h1>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div><div></div><div></div>
+      </div>
+    </div>
     <p>Senior Digital Media Analyst | Data-Driven Marketer | MBA</p>
-    <nav>
+    <nav id="navMenu">
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
@@ -75,5 +80,14 @@
   <footer>
     <p>© 2025 Shunmugar Rajan G — <a href="https://shunmugar1212.github.io">shunmugar1212.github.io</a></p>
   </footer>
+
+  <!-- Fixed Resume Button for Small Screens -->
+  <a href="assets/resume.pdf" class="btn-fixed" target="_blank" title="Download CV">📄 CV</a>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navMenu').classList.toggle('open');
+    }
+  </script>
 </body>
 </html>
